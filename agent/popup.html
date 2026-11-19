@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Orbit Agent</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">O</div>
+      <div>
+        <h1>Orbit Agent</h1>
+        <p>Browser Agent</p>
+      </div>
+    </header>
+
+    <div class="status-card">
+      <div class="status-indicator" id="statusIndicator"></div>
+      <div>
+        <h2 id="statusText">Checking connection...</h2>
+        <p id="statusDescription">Connecting to Orbit Control Platform</p>
+      </div>
+    </div>
+
+    <div class="details">
+      <div class="detail-row">
+        <span>Agent ID</span>
+        <span id="agentId">Loading...</span>
+      </div>
+
+      <div class="detail-row">
+        <span>Agent Name</span>
+        <span id="agentName">Loading...</span>
+      </div>
+
+      <div class="detail-row">
+        <span>Backend</span>
+        <span id="backendStatus">Checking...</span>
+      </div>
+    </div>
+
+    <button id="refreshButton">Refresh Connection</button>
+
+    <footer>
+      Orbit · Manage. Monitor. Execute.
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
